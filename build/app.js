@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#wb_ResponsiveMenu ul li a").click(function(e){$("#wb_ResponsiveMenu input").prop("checked",!1)})});
