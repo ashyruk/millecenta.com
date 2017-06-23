@@ -1,0 +1,301 @@
+@mixin active{
+  background-color: #CCCCCC;
+  color: #424242;
+  border: 0 solid #fff;
+  box-shadow:0 0 1px 1px #fff inset;
+  //border-radius: 5px;
+}
+
+.PageHeader{
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  height:60px;
+  box-shadow:0 1px 3px #fff ;
+
+}
+
+.wb_ResponsiveMenu {
+  background-color: rgba(79,79,79,1.00);
+  //text-align: center;
+  width: 100%;
+  height:100%;
+
+  .logo img{
+    display: inline-block;
+    height: 60px;
+    float: left;
+    vertical-align: middle;
+  }
+
+  ul.ResponsiveMenu{
+    vertical-align: middle;
+    list-style: none;
+    float: right;
+    li {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 1px;
+
+      a{
+        color: #FFFFFF;
+        font-size: 1.2em;
+        padding: 10px;
+        //margin: 10px auto;
+        text-align: center;
+
+        &:hover{
+          @include active;
+        }
+      }
+      &:hover > ul {
+        display: list-item;
+      }
+      .active{
+        @include active;
+      }
+      i{
+        font-size: 20px;
+        width: 20px;
+      }
+    }
+    //&:after{
+      //clear: both;
+      //content: "";
+      //display: block;    }
+
+    ul{
+      display: none;
+      position: absolute;
+      top: 63px;
+    }
+
+  }
+}
+
+
+.wb_ResponsiveMenu ul ul li
+{
+  background-color: #4F4F4F;
+  color: #FFFFFF;
+  float: none;
+  position: relative;
+  //width: 295px;
+}
+.wb_ResponsiveMenu ul ul li a:hover, .wb_ResponsiveMenu ul ul li .active
+{
+  @include active;
+}
+.wb_ResponsiveMenu ul ul li i
+{
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.wb_ResponsiveMenu ul ul li a
+{
+  color: #FFFFFF;
+  padding: 15px 20px 15px 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+.wb_ResponsiveMenu ul ul ul li
+{
+  left: 295px;
+  position: relative;
+  top: -68px;
+}
+
+// SERVICE
+.arrow-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #FFFFFF;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 0 dotted;
+}
+.arrow-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  vertical-align: middle;
+  border-left: 4px solid #FFFFFF;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 0 dotted;
+}
+
+// END SERVICE
+.wb_ResponsiveMenu li a:hover .arrow-down
+{
+  border-top-color: #424242;
+}
+.wb_ResponsiveMenu ul ul li a:hover .arrow-left, .wb_ResponsiveMenu ul ul li .active .arrow-left
+{
+  border-left-color: #424242;
+}
+.wb_ResponsiveMenu .toggle,[id^=ResponsiveMenu1-submenu]
+{
+  display: none;
+}
+@media all and (max-width:768px)
+{
+  .wb_ResponsiveMenu
+  {
+    margin: 0;
+    text-align: left;
+  }
+  .wb_ResponsiveMenu ul li a, .wb_ResponsiveMenu .toggle
+  {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 15px 20px 15px 20px;
+  }
+  .wb_ResponsiveMenu .toggle + a
+  {
+    display: none !important;
+  }
+  .wb_ResponsiveMenu > ul > li > a
+  {
+    height: auto;
+  }
+  .wb_ResponsiveMenu .toggle
+  {
+    display: block;
+    background-color: #4F4F4F;
+    color: #FFFFFF;
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    border: none;
+  }
+  .wb_ResponsiveMenu .toggle:hover
+  {
+    background-color: #CCCCCC;
+    color: #424242;
+  }
+
+  [id^=ResponsiveMenu1-submenu]:checked + ul
+  {
+    display: block !important;
+  }
+  .ResponsiveMenu-title
+  {
+    height: 68px;
+    line-height: 68px !important;
+    text-align: center;
+  }
+  .wb_ResponsiveMenu ul li
+  {
+    display: block;
+    width: 100%;
+  }
+  .wb_ResponsiveMenu ul ul .toggle,
+  .wb_ResponsiveMenu ul ul a
+  {
+    padding: 0 40px;
+  }
+  .wb_ResponsiveMenu a:hover,
+  .wb_ResponsiveMenu ul ul ul a
+  {
+    background-color: #4F4F4F;
+    color: #FFFFFF;
+  }
+  .wb_ResponsiveMenu ul li ul li .toggle,
+  .wb_ResponsiveMenu ul ul a
+  {
+    background-color: #4F4F4F;
+    color: #FFFFFF;
+  }
+  .wb_ResponsiveMenu ul ul ul a
+  {
+    padding: 15px 20px 15px 60px;
+  }
+  .wb_ResponsiveMenu ul li a
+  {
+    text-align: left;
+  }
+  .wb_ResponsiveMenu ul li a br
+  {
+    display: none;
+  }
+  .wb_ResponsiveMenu ul li i
+  {
+    margin-right: 6px;
+  }
+  .wb_ResponsiveMenu ul ul
+  {
+    float: none;
+    position: static;
+  }
+  .wb_ResponsiveMenu ul ul li:hover > ul,
+  .wb_ResponsiveMenu ul li:hover > ul
+  {
+    display: none;
+  }
+  .wb_ResponsiveMenu ul ul li
+  {
+    display: block;
+    width: 100%;
+  }
+  .wb_ResponsiveMenu ul ul ul li
+  {
+    position: static;
+  }
+  .ResponsiveMenu1-icon
+  {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 22px;
+  }
+  .ResponsiveMenu1-icon span
+  {
+    display: block;
+    margin-top: 4px;
+    height: 2px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    width: 24px;
+  }
+  .wb_ResponsiveMenu ul li ul li .toggle:hover
+  {
+    background-color: #CCCCCC;
+    color: #424242;
+  }
+  .wb_ResponsiveMenu .toggle .arrow-down
+  {
+    border-top-color: #FFFFFF;
+  }
+  .wb_ResponsiveMenu .toggle:hover .arrow-down, .wb_ResponsiveMenu li .active .arrow-down
+  {
+    border-top-color: #424242;
+  }
+  .wb_ResponsiveMenu ul li ul li .toggle .arrow-down
+  {
+    border-top-color: #FFFFFF;
+  }
+  .wb_ResponsiveMenu ul li ul li .toggle:hover .arrow-down, .wb_ResponsiveMenu ul li ul li .active .arrow-down
+  {
+    border-top-color: #424242;
+  }.ResponsiveMenu1 a
+   {
+     display: block;
+   }
+
+}
+
+.ResponsiveMenu{
+  background-color: #4F4F4F;
+  display: inline-block;
+  height: 60px;
+}
+//.ResponsiveMenu{
+//  background-color: transparent;
+//  display: none;}
