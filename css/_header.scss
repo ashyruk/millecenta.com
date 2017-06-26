@@ -28,11 +28,18 @@
     float: left;
     vertical-align: middle;
   }
-
+  a.bars{
+    color: #fff;
+    float: right;
+    margin-top: 10px;
+  }
   ul.ResponsiveMenu{
     vertical-align: middle;
     list-style: none;
     float: right;
+    @media screen and (max-width: 770px){
+      display: none;
+    }
     li {
       display: inline-block;
       margin: 20px auto;
