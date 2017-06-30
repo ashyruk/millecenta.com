@@ -10,6 +10,14 @@ div.page-footer {
         bottom:0;
     }
 }
+.social{
+    display: inline-block;
+    vertical-align: middle;
+    @media screen and (max-width: 760px){
+        display: block;
+        margin: 10px;
+    }
+}
 .wb_FontAwesomeIcon{
     display: inline-block;
     background-color: #2C3E50;
@@ -53,6 +61,7 @@ div.page-footer {
     vertical-align: middle;
     @media screen and (max-width: 760px){
         display: block;
+        float: none;
     }
     span{
         color:#FF7F50;
@@ -70,6 +79,7 @@ div.page-footer {
     float: left;
     @media screen and (max-width: 760px){
         display: block;
+        float: none;
     }
     span{
         color:#FF7F50;

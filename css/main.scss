@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: #b8b8b8;
+  background: url("/build/img/background.jpg") top no-repeat fixed;
+  background-size: cover;
+  //background-color: #f2f2f2;
   //color: #000;
   font-weight: normal;
   font-size: 13px;
