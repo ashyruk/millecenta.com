@@ -17,14 +17,15 @@ body {
 }
 a{
   text-decoration: none;
+  color: #fff;
   &:visited  {
-    color: #800080;
+  //  color: #800080;
   }
   &:active{
-    color: #FF0000;
+    //color: #FF0000;
   }
   &:hover{
-    color: #0000FF;
+  //  color: #0000FF;
 
   }
 }

@@ -56,3 +56,43 @@ hr.line {
 .Article .blogsubject {
   display: block;
 }
+section.education{
+    color: #fff;
+    div.wb_course{
+        //width: 45%;
+        //height: 50vh;
+        overflow: hidden;
+        //display: inline-block;
+        vertical-align: top;
+        background: rgba(0,0,0,.5);
+        padding: 20px;
+        margin: 2%;
+        @media screen and (max-width: 770px){
+            display: block;
+            width: 95%;
+        }
+        //&::after{
+        //    content: 'развернуть';
+        //    color: #fff;
+        //    position: relative;}
+        .hidden{
+            display: none;
+        }
+        h4{
+            text-transform: uppercase;
+            color: #fff;
+        }
+        p{
+            text-align: justify;
+            ul{
+                list-style: element;
+                text-align: left;
+            }
+            span.cap{
+                color: #FF7F50;
+                font-size: 1.5em;
+            }
+        }
+
+    }
+}
