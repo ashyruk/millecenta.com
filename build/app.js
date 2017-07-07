@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#wb_ResponsiveMenu ul li a").click(function(e){$("#wb_ResponsiveMenu input").prop("checked",!1)})});
+$(document).ready(function(){var e=$(".PageHeader");window.addEventListener("scroll",function(){this.scrollY>80?e.addClass("_solid"):e.removeClass("_solid")}),$(".expand").on("click",function(e){e.preventDefault(),$(this).hide(100).next().slideDown("slow")})});
