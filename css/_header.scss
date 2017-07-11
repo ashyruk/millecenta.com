@@ -18,6 +18,9 @@
   background-color: rgba(79,79,79,1.00);
   box-shadow:0 1px 3px #fff ;
 }
+.show-inline{
+  display:inline-block;
+}
 .wb_ResponsiveMenu {
 
   //text-align: center;
@@ -77,11 +80,11 @@
       //content: "";
       //display: block;    }
 
-    ul{
+    /*ul{
       display: none;
       position: absolute;
       top: 63px;
-    }
+    }*/
 
   }
 }
@@ -103,19 +106,6 @@
 {
   margin-right: 6px;
   vertical-align: middle;
-}
-.wb_ResponsiveMenu ul ul li a
-{
-  color: #FFFFFF;
-  padding: 15px 20px 15px 20px;
-  text-align: left;
-  vertical-align: middle;
-}
-.wb_ResponsiveMenu ul ul ul li
-{
-  left: 295px;
-  position: relative;
-  top: -68px;
 }
 
 // SERVICE
@@ -155,7 +145,7 @@
 {
   display: none;
 }
-@media all and (max-width:768px)
+/*@media all and (max-width:768px)
 {
   .wb_ResponsiveMenu
   {
@@ -301,7 +291,7 @@
      display: block;
    }
 
-}
+}*/
 
 .ResponsiveMenu{
   //background-color: #4F4F4F;

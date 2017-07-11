@@ -9,7 +9,7 @@
         display: block;
         text-align: center;
         img {
-          width: 200px;
+          width: 300px;
         }
     }
 }
@@ -20,8 +20,18 @@
     text-align: center;
     h1.Heading {
         font-weight: bold;
-        font-size: 32px;
+        //font-size: 32px;
+        font-size: 2.2em;
         background: #f2f2f2;
+    }
+}
+.wb_Heading-sm {
+    background: #cacaca;
+    padding: 1%;
+    text-align: center;
+    h1.Heading-sm{
+        font-weight: bold;
+        font-size: 22px;
     }
 }
 
@@ -31,6 +41,11 @@ hr.line {
     border: none;
 }
 
+hr.line-sm {
+    height: 5px;
+    background-color: #FF7F50;
+    border: none;
+}
 
 .Article {
     line-height: 1.2;
@@ -50,12 +65,21 @@ hr.line {
           font-style: italic;
         }
     }
+    p{
+        color: #fff;
+        font-size: 1.5em;
+    }
 }
 
 
 .Article .blogsubject {
   display: block;
 }
+#googleMap{
+    width:100%;
+    height:40vh;
+}
+
 section.education{
     color: #fff;
     div.wb_course{
@@ -99,6 +123,45 @@ section.education{
             margin: 20px -20px -20px -20px;
             background: rgba(255,255,255,.6);
         }
+
+    }
+}
+section.prices{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    p{
+        padding: 1em 5em;
+    }
+    table{
+        text-align: left;
+        border: 1px solid #fff;
+
+        width: 80%;
+        margin: 1em auto;
+        border-collapse: collapse;
+
+        tr{
+            border: 1px solid #fff;
+            td{
+                border: 1px solid #fff;
+                width: 50%;
+                padding: 0.5em;
+
+                &:first-child{
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+section.about{
+    p{
+        color: #fff;
+        font-size: 1.5em;
+    }
+    div.wb_Heading-sm{
+        background: #f2f2f2;
 
     }
 }

@@ -19,4 +19,21 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).hide(100).next().slideDown('slow');
     });
+
+    $('a.bars').on('click',function (e) {
+       e.preventDefault();
+        //$('.ResponsiveMenu').toggleClass('show-inline');
+        $('.ResponsiveMenu').toggle();
+    });
+    $(window).on('resize',function () {
+        if (this.screen.width>770){
+            $('.ResponsiveMenu').show();
+            $('a.bars').hide();
+        }else if(this.screen.width<770) {
+            $('.ResponsiveMenu').hide();
+            $('a.bars').show();
+        }
+
+    });
+
 });
