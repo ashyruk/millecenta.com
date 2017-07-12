@@ -1,3 +1,4 @@
+
 #container {
     //background: url("/build/img/background.jpg") top no-repeat fixed;
     //background-size: cover;
@@ -164,4 +165,44 @@ section.about{
         background: #f2f2f2;
 
     }
+}
+
+section.work_exapmles{
+    padding: 1%;
+    font-size: 1.5em;
+    color: #fff;
+    div.tabname{
+        display: inline-block;
+        width: 50%;
+        span{
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+    div.collage {
+        margin-top: 2%;
+        padding: 2%;
+        border-top: 2px solid #fff;
+
+        column-count: 3;
+        column-gap: 20px;
+        text-align:justify;
+        img{
+            width: 100%;
+        }
+        .collage-col{
+            width: 30%;
+            display: inline-block;
+
+            img{
+                width: 100%;
+                height: auto;
+                //vertical-align: middle;
+                display: flex;
+                flex-wrap: wrap;
+                //float: left;
+            }
+        }
+    }
+
 }

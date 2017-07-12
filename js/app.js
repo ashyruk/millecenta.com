@@ -35,5 +35,19 @@ $(document).ready(function(){
         }
 
     });
+    $('.tabname span').on('click', function (e) {
+        $('.tabname span').removeClass('active');
+
+        if ($(this).data('idx') == 1){
+            $('div.collage[data-idx = "1"]').show();
+            $('div.collage[data-idx = "2"]').hide();
+            $(this).addClass("active");
+        }
+        if ($(this).data('idx') == 2){
+            $('div.collage[data-idx = "2"]').show();
+            $('div.collage[data-idx = "1"]').hide();
+            $(this).addClass("active");
+        }
+    });
 
 });

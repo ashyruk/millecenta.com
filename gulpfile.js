@@ -18,7 +18,7 @@ var gulpLoadPlugins = require('gulp-load-plugins');
 var plugins = gulpLoadPlugins();
 
 var paths = {
-    html:['./index.html'],
+    html:['./index.html','./pages/Galery.html'],
     css:['./css/*.scss'],
     js:['./js/*.js'],
     img:['./images/*']
