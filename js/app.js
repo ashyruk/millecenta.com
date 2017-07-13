@@ -49,38 +49,4 @@ $(document).ready(function(){
             $(this).addClass("active");
         }
     });
-    if (location == "http://localhost:8080/pages/News.html"){
-        var req = new XMLHttpRequest();
-        req.open('GET',"../build/news.json",true);
-        req.onreadystatechange = function(){
-            if (req.readyState == 4 && req.status == 200){
-                var articles = JSON.parse(req.responseText);
-                console.log("req");
-                console.log(JSON.parse(req.responseText));
-                var news = document.querySelector("section.news");
-                for (var i = 0;i<articles.length;i++){
-                    var article =
-                    "<article>"+
-                        "<header>"+
-                            "<span class=\"date\">"+articles[i].date+"</span> - "+
-                            "<span class=\"title\">"+articles[i].title+"</span>"+
-                        "</header>"+
-                    "<hr>"+
-                    "<div class=\"annotation\">"+
-                        "<div>"+
-                            "<p>"+articles[i].annotation+"</p>"+
-                        "</div>"+
-                        "<div class=\"img\"><img src=\"/build/img/"+articles[i].img+"\" alt=\"\"></div>"+
-                        "</div>"+
-                    "<a href=\"\">Читать далее</a>"+
-                    "</article>";
-                    news.append(article);
-                }
-            }
-        };
-        req.send();
-        /*$.getJSON("../build/news.json",function (data) {
-
-        })*/
-    }
 });

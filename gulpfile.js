@@ -42,7 +42,7 @@ gulp.task('js', function(){
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(uglify())
-        .pipe(concat('app.js'))
+        //.pipe(concat('app.js'))
         .pipe(gulp.dest('build'))
         .pipe(reload({stream:true}));
 });
