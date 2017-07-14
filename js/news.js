@@ -32,7 +32,11 @@ req.onreadystatechange = function(){
 
             $('h1.Heading').text(articles[idx].title);
             $('section.news').html('');
-            $('article.news-item').show().children('header').text(articles[idx].date);
+            $('article.news-item').show()
+                .children('header').text(articles[idx].date).parent()
+                .children('p.annotation').text(articles[idx].annotation).parent()
+                .children('div').html(articles[idx].content);
+
         });
     }
 };
