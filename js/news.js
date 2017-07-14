@@ -19,7 +19,7 @@ req.onreadystatechange = function(){
                 "<div>"+
                 "<p>"+articles[i].annotation+"</p>"+
                 "</div>"+
-                "<div class=\"img\"><img src=\"/build/img/"+articles[i].img+"\" alt=\"\"></div>"+
+                "<div class=\"img\"><img src=\"../build/img/"+articles[i].img+"\" alt=\"\"></div>"+
                 "</div>"+
                 "<a data-idx=\""+articles[i].id +"\" href=\"\">Читать далее</a>"+
                 "</article>";
