@@ -270,5 +270,19 @@ article.news-item{
     header, .annotation{
         font-size: 1.5em;
     }
+    div.annotation {
+        display: inline-block;
+        width: 78%;
+    }
+    div.img {
+        width: 20%;
+        margin: 1%;
+        float: right;
+        display: inline-block;
+        vertical-align: top;
+        img{
+            width: 100%;
+        }
+    }
 
 }

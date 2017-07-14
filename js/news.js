@@ -34,8 +34,10 @@ req.onreadystatechange = function(){
             $('section.news').html('');
             $('article.news-item').show()
                 .children('header').text(articles[idx].date).parent()
-                .children('p.annotation').text(articles[idx].annotation).parent()
-                .children('div').html(articles[idx].content);
+                .children('div.annotation').children('p').text(articles[idx].annotation).parent().parent()
+                .children('div.img').children('img').attr('src','../build/img/'+articles[idx].img).parent().parent()
+                .children('div.content').html(articles[idx].content).parent()
+                ;
 
         });
     }
