@@ -133,6 +133,9 @@ section.prices{
     font-size: 1.5em;
     p{
         padding: 1em 2em;
+        @media screen and (max-width: 720px){
+            padding: 1em;
+        }
     }
     table{
         text-align: left;
